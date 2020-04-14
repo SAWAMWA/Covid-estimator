@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Covide19-estmator</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="one">
+      <h1 id="i">COVID-19 ESTIMATOR</h1>
+    </div>
+    <div class="two">
+      <form class="" action="index.html" method="post">
+        <ul>
+          <li><label for="periodType">Data-period-type</label>
+            <select class="" name="" id="periodType" default="Days">
+              <option value="Days">Days</option>
+              <option value="Weeks">Weeks</option>
+              <option value="Months">Months</option>
+            </select>
+          </li>
+          <li><label for="population"> Data-Population:</label><input type="number" name="" value=""id="population" placeholder="data-population"></li>
+          <li><label for="timeToElapse">Data-time-to-elapse:</label><input type="number" name="" value="" id="timeToElapse" placeholder="data-time-to-elapse"></li>
+          <li><label for="reportedCases">Data-reported-cases:</label><input type="number" name="" value="" id="reportedCases" placeholder="data-reported-Cases"></li>
+          <li><label for="hospitalbeds">Data-total-hospital-beds:</label><input type="number" name="" value=""id="hospitalbeds" placeholder="data-total-hospital-beds"></li>
+          <li><input type="button" name="" value="Data-go-estimate" onclick="covid19ImpactEstimator()"></li>
+      </ul>
+      </form>
+</div>
+  <div class="container">
+    <div class = "moderate"><h2 id="o">Moderate impact</h2><hr>
+            <div class="">
+              <h3 id="period"></h3><p>Period Type</p>
+            </div><hr>
+            <div class="">
+              <h3 id="reportecases"></h3><p>Repoted cases</p>
+            </div><hr>
+            <div class="">
+              <h3 id="popu"></h3><p>Population</p>
+            </div><hr>
+              <div class="">
+                <h3 id="beds"></h3><p>Hospital Beds</p>
+              </div><hr>
+              <div class="">
+                <h3 id="infection"></h3><p>Infected cases</p>
+              </div><hr>
+              <div class="">
+                <h3 id="inrqt"></h3><p>Infection on Requested time: </p>
+              </div><hr>
+              <div class="">
+                <h3 id="hosp"></h3><p> Cases that require hospitalization</p>
+              </div><hr>
+              <div class="">
+                <h3 id="avlbeds"></h3><p>Available beds: </p>
+              </div><hr>
+              <div class="">
+                <h3 id="icu"></h3><p>"Cases of ICU request "</p>
+              </div><hr>
+              <div class="">
+                <h3 id="vent"></h3><p>" Impact Cases that will require ventilators: "</p>
+              </div>
+</div>
+    <div class="impact">
+              <h2 id="o">Severe impacts</h2><h1 id="severeImpact"></h1><hr>
+              <div class="">
+                <h3 id="severeperiod"></h3><p>Period Type</p>
+              </div><hr>
+              <div class="">
+                <h3 id="severecases"></h3><p>Repored cases</p>
+              </div><hr>
+              <div class="">
+                <h3 id="severepopulation"></h3><p>Population</p>
+              </div><hr>
+              <div class="">
+                <h3 id="severebeds"></h3><p>Hospital Beds</p>
+              </div><hr>
+              <div class="">
+                <h3 id="severeioci"></h3><p>Infected cases</p>
+              </div><hr>
+              <div class="">
+                <h3 id="severerequestedtime"></h3><p>Infection on Requested time: </p>
+              </div><hr>
+              <div class="">
+                <h3 id="severehospitalisation"></h3><p> Cases that require hospitalization</p>
+              </div><hr>
+              <div class="">
+                <h3 id="severebedsRT"></h3><p>Available beds: </p>
+              </div><hr>
+              <div class="">
+                <h3 id="severeicu"></h3><p>"Cases of ICU request impact: "</p>
+              </div><hr>
+              <div class="">
+                <h3 id="severevent"></h3><p>" Impact Cases that will require ventilators: "</p>
+              </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="covid.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+body{
+    margin: 4px;
+    background-color:;
+  }
+  div{
+  border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 2px;
+    display: block;
+  }
+  .moderate{
+    float: left;
+    background-color: grey;
+  }
+  .impact{
+    float: right;
+    background-color: grey;
+  }
+  .container{
+    display: grid;
+      grid-gap: 60px;
+          grid-template-columns: 600px 600px;
+          background-color: #fff;
+          color: #444;
+    }
+  .two{
+    margin: 1px auto;
+    max-width: 500px;
+    padding: 5px 10px,10px 5px;
+  }
+  .two li{
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 000;
+  }
+  .two label{
+    margin: 0 03px 0;
+    padding: 0px;
+    display:block;
+    font-weight: bold;
+  }
+  .two input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .two select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=button]{
+    background-color: #4caf50;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+  }
+  h2{
+    text-align: center;
+    color:white;
+    }
+  h3{
+    text-align: center;
+    color: red;
+    }
+    h1{
+      text-align: center;
+      color: green;
+    }
+  p{
+    text-align: center;
+  
+  
+  }
+  
