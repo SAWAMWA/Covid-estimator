@@ -1,15 +1,15 @@
 
  const covid19ImpactEstimator= ()=> {
     const data = {
-     "region":{
+     region:{
       
          },
-       "periodType":document.getElementById('periodType').value,
-       "timeToElapse":document.getElementById('timeToElapse').value,
-       "reportedCases":document.getElementById('reportedCases').value,
-       "population":document.getElementById('population').value,
-       "totalHospitalBeds":document.getElementById('hospitalbeds').value,
-       "impact":{
+       periodType:document.getElementById('periodType').value,
+       timeToElapse:document.getElementById('timeToElapse').value,
+       reportedCases:document.getElementById('reportedCases').value,
+       population:document.getElementById('population').value,
+       totalHospitalBeds:document.getElementById('hospitalbeds').value,
+       impact:{
            "currentlyInfected":(function(){return data.reportedCases*10;}),
            "infectionByRequestedTime":function(){return Math.floor(data.impact.currentlyInfected()*Math.pow(2 ,(data.timeToElapse/3)));},
            "severeCasesByRequestedTime":function() {return Math.floor(data.impact.infectionByRequestedTime()*15/100);},
