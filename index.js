@@ -2,9 +2,7 @@
  const covid19ImpactEstimator= ()=> {
     const data = {
      "region":{
-         //"name":document.getElementById('region').value,
-         //"avgAge":document.getElementById('age').value,
-         //"avgDailyIncomeInUSD":document.getElementById('averageIncome').value
+      
          },
        "periodType":document.getElementById('periodType').value,
        "timeToElapse":document.getElementById('timeToElapse').value,
