@@ -7,94 +7,139 @@
   </head>
   <body>
     <div class="one">
-      <h1 id="i">COVID-19 ESTIMATOR</h1>
+      <h1 id="i">COVID-19 ESTIMATOR</h1></hr>
     </div>
-    <div class="two">
-      <form class="" action="index.html" method="post">
-        <ul>
-          <li><label for="periodType">Data-period-type</label>
+<div class=" container">
+    <div class='inputs'>
+      <div class='input'>
+      <form class="" >
+        
+          <label for="periodType">Data-period-type</label>
             <select class="" name="" id="periodType" default="Days">
               <option value="Days">Days</option>
               <option value="Weeks">Weeks</option>
               <option value="Months">Months</option>
             </select>
-          </li>
-          <li><label for="population"> Data-Population:</label><input type="number" name="" value=""id="population" placeholder="data-population"></li>
-          <li><label for="timeToElapse">Data-time-to-elapse:</label><input type="number" name="" value="" id="timeToElapse" placeholder="data-time-to-elapse"></li>
-          <li><label for="reportedCases">Data-reported-cases:</label><input type="number" name="" value="" id="reportedCases" placeholder="data-reported-Cases"></li>
-          <li><label for="hospitalbeds">Data-total-hospital-beds:</label><input type="number" name="" value=""id="hospitalbeds" placeholder="data-total-hospital-beds"></li>
-          <li><input type="button" name="" value="Data-go-estimate" onclick="covid19ImpactEstimator()"></li>
-      </ul>
+          
+          <label for="population"> Data-Population:</label>
+            <input type="number" name="" value=""id="population" placeholder="data-population">
+          <label for="timeToElapse">Data-time-to-elapse:</label>
+            <input type="number" name="" value="" id="timeToElapse" placeholder="data-time-to-elapse">
+          <label for="reportedCases">Data-reported-cases:</label>
+            <input type="number" name="" value="" id="reportedCases" placeholder="data-reported-Cases">
+          <label for="hospitalbeds">Data-total-hospital-beds:</label>
+            <input type="number" name="" value=""id="hospitalbeds" placeholder="data-total-hospital-beds">
+          <input type="button" name="" value="Data-go-estimate" onclick="covid19ImpactEstimator()">
+      
       </form>
-</div>
-  <div class="container">
-    <div class = "moderate"><h2 id="o">Moderate impact results</h2><hr>
-            <div class="">
-              <h3 id="period"></h3><p>Period Type</p>
-            </div><hr>
-            <div class="">
-              <h3 id="reportecases"></h3><p>Repoted cases</p>
-            </div><hr>
-            <div class="">
-              <h3 id="popu"></h3><p>Population</p>
-            </div><hr>
-              <div class="">
-                <h3 id="beds"></h3><p>Hospital Beds</p>
-              </div><hr>
-              <div class="">
-                <h3 id="infection"></h3><p>Infected cases</p>
-              </div><hr>
-              <div class="">
-                <h3 id="inrqt"></h3><p>Infection on Requested time: </p>
-              </div><hr>
-              <div class="">
-                <h3 id="hosp"></h3><p> Cases that require hospitalization</p>
-              </div><hr>
-              <div class="">
-                <h3 id="avlbeds"></h3><p>Available beds: </p>
-              </div><hr>
-              <div class="">
-                <h3 id="icu"></h3><p>"Cases of ICU request "</p>
-              </div><hr>
-              <div class="">
-                <h3 id="vent"></h3><p>" Impact Cases that will require ventilators: "</p>
-              </div>
-</div>
-    <div class="impact">
-              <h2 id="o">Severe impacts results</h2><h1 id="severeImpact"></h1><hr>
-              <div class="">
-                <h3 id="severeperiod"></h3><p>Period Type</p>
-              </div><hr>
-              <div class="">
-                <h3 id="severecases"></h3><p>Repored cases</p>
-              </div><hr>
-              <div class="">
-                <h3 id="severepopulation"></h3><p>Population</p>
-              </div><hr>
-              <div class="">
-                <h3 id="severebeds"></h3><p>Hospital Beds</p>
-              </div><hr>
-              <div class="">
-                <h3 id="severeioci"></h3><p>Infected cases</p>
-              </div><hr>
-              <div class="">
-                <h3 id="severerequestedtime"></h3><p>Infection on Requested time: </p>
-              </div><hr>
-              <div class="">
-                <h3 id="severehospitalisation"></h3><p> Cases that require hospitalization</p>
-              </div><hr>
-              <div class="">
-                <h3 id="severebedsRT"></h3><p>Available beds: </p>
-              </div><hr>
-              <div class="">
-                <h3 id="severeicu"></h3><p>"Cases of ICU request impact: "</p>
-              </div><hr>
-              <div class="">
-                <h3 id="severevent"></h3><p>" Impact Cases that will require ventilators: "</p>
-              </div>
     </div>
+</div>
+  
+
+
+
+
+<div class="extimate-container">
+  
+    <div class = "estimate" >
+  
+      <div class="o">
+         <div class="estimate1">
+          <div class="">
+              <h4 id="period"></h4>
+             <small>Period Type</small>
+            </div>
+            <div class="">  
+              <h4 id="reportecases"></h4>
+              <small>Repoted cases</small>
+            </div>
+            <div class="">
+              <h4 id="popu"></h4>
+              <small>Population</small>
+            </div>
+              <div class="">
+                <h4 id="beds"></h4><small>Hospital Beds</small>
+              </div>
+              <div class="">
+                <h4 id="infection"></h4><small>Infected cases</small>
+              </div>
+          </div>
+
+
+
+
+
+          <div class="estimate2">
+              <div class="">
+                <h4 id="inrqt"></h4><small>Infections Requested time: </small>
+              </div>
+              <div class="">
+                <h4 id="hosp"></h4><small> hospitalization</small>
+              </div>
+              <div class="">
+                <h4 id="avlbeds"></h4><small>Available beds: </small>
+              </div>
+              <div class="">
+                <h4 id="icu"></h4><small> ICU  </small>
+              </div>
+              <div class="">
+                <h4 id="vent"></h4><small> ventilators</small>
+              </div>
+          </div>
+        </div>
     </div>
 
+
+
+
+
+   
+    <div class="estimate">
+              
+          <div class="estimate1">
+              <div class="">
+                <h4 id="severeperiod"></h4><small>Period Type</small>
+              </div>
+              <div class="">
+                <h4 id="severecases"></h4><small>Repored cases</small>
+              </div>
+              <div class="">
+                <h4 id="severepopulation"></h4><small>Population</small>
+              </div>
+              <div class="">
+                <h4 id="severebeds"></h4><small>Hospital Beds</small>
+              </div>
+              <div class="">
+                <h4 id="severeioci"></h4><small>Infected cases</small>
+              </div>
+         </div>
+
+        <div class="estimate2">   
+              <div class="">
+                <h4 id="severerequestedtime"></h4><small>Infection Requested time </small>
+              </div>
+              <div class="">
+                <h4 id="severehospitalisation"></h4><small> hospitalization</small>
+              </div>
+              <div class="">
+                <h4 id="severebedsRT"></h4><small>Available beds: </small>
+              </div>
+              <div class="">
+                <h4 id="severeicu"></h4><small>ICU</small>
+              </div>
+              <div class="">
+                <h4 id="severevent"></h4><small> ventilators</small>
+              </div>
+            </div>
+    </div>
+
+
+
+
+
+    
+  </div>
+  </div>
     <script type="text/javascript" src="covid.js">
     </script>
   </body>
